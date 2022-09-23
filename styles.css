@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #6c5ce7;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+#container {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase-container{
+    margin: auto;
+    text-align: center;
+}
+
+#showcase-title {
+    color: orange;
+    text-decoration: underline;
+}
+
+#showcase {
+    min-height: 490px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 33.3333%);
+    grid-template-rows: repeat(1, auto);
+    height: auto;
+    margin: 60px auto 60px 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.product {
+    text-align: center;
+    background-color: white;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 450px;
+    transition: .5s ease;
+}
+
+.product:hover {
+    width: 350px;
+    height: 470px;
+}
+
+.img_container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.img_container:hover .overlay{
+    opacity: 1;
+}
+
+.product img {
+    max-width: 200px;
+}
+
+.product button {
+    border-radius: 10px;
+    border: 2px solid orange;
+    color: #6c5ce7;
+    font-size: large;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    transition: .5s ease;
+}
+
+.product button:hover {
+    border: 2px solid #6c5ce7;
+    background-color: #6c5ce7;
+    color: orange;
+}
